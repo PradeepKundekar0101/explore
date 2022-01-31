@@ -1,0 +1,338 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ExploreTV</title>
+    <link rel="stylesheet" href="css/index.css">
+    <link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">  
+    
+    
+     <script src="js/loadingHeader.js"></script>
+    
+</head>
+<body>
+    <div class="nav">
+        <ul>
+            <li><a href="index.html"><b>EXPLORE_TV</b></a></li>
+            <li><a href="#latest">Latest</a></li>
+            <li><a href="#action">Action</a></li>
+            <li><a href="#marvel">Marvel Cinematic Universe</a></li>
+        </ul>
+    </div>
+    <div class="header" id="header">
+        <div class="headerBox" id="slide1">
+            <button onclick="slide1Prev()" ><i class="fa fa-caret-left"></i></button>
+            <div class="headerText">
+                <h1 class="title">
+                    Spider-Man: No Way Home     
+                </h1>
+                <h4 class="subTitle">
+                    <ul>
+                        <li>Action</li>
+                        <li>Adventure</li>
+                    </ul>
+                </h4>
+                <p class="headerDescription">
+                    With Spider-Man's identity now revealed, our friendly neighborhood web-slinger is unmasked and no longer able to separate his normal life as Peter Parker from the high stakes of being a superhero. When Peter asks for help from Doctor Strange, the stakes become even more dangerous, forcing him to discover what it truly means to be Spider-Man.
+                </p>
+            </div>
+            <div class="headerImage">
+                <img  onclick="move(1)" src="assets/header/spiderman.jpg"  alt="">
+            </div>
+            <button onclick="slide1Next()" ><i class="fa fa-caret-right"></i></button>
+        </div>
+        <div class="headerBox" id="slide2">
+            <button onclick="slide2Prev()"><i class="fa fa-caret-left"></i></button>
+            <div class="headerText">
+                <h1 class="title">
+                    Eternals
+                </h1>
+                <h4 class="subTitle">
+                    <ul>
+                        <li>Action</li>
+                        <li>Adventure</li>
+                    </ul>
+                </h4>
+                <p class="headerDescription">
+                    The Eternals, a race of immortal beings with superhuman powers who have secretly lived on Earth for thousands of years, reunite to battle the evil Deviants
+                </p>
+            </div>
+            <div class="headerImage">
+                <img  onclick="move(2)" src="assets/moviePosters/eternals2.jpg" alt="">
+            </div>
+            <button onclick="slide2Next()"><i class="fa fa-caret-right"></i></button>
+        </div>
+        
+        <div class="headerBox" id="slide3">
+            <button onclick="slide3Prev()"><i class="fa fa-caret-left"></i></button>
+            <div class="headerText">
+                <h1 class="title">
+                    K.G.F: Chapter1
+                </h1>
+                <h4 class="subTitle">
+                    <ul>
+                        <li>Action</li>
+                        <li>Romance</li>
+                    </ul>
+                </h4>
+                <p class="headerDescription">
+                    Rocky, a young man, seeks power and wealth in order to fulfil a promise to his dying mother. His quest takes him to Mumbai, where he gets involved with the notorious gold mafia.
+                </p>
+            </div>
+            <div class="headerImage">
+                <img src="assets/moviePosters/kgf2.jpg" onclick="move(3)" alt="">
+            </div>
+            <button onclick="slide3Next()"><i class="fa fa-caret-right"></i></button>
+        </div>
+
+        <div class="headerBox" id="slide4">
+            <button onclick="slide4Prev()"><i class="fa fa-caret-left"></i></button>
+            <div class="headerText">
+                <h1 class="title">
+                   83
+                </h1>
+                <h4 class="subTitle">
+                    <ul>
+                        <li>Sport</li>
+                        <li>Drama</li>
+                    </ul>
+                </h4>
+                <p class="headerDescription">
+                    On June 25, 1983, the Lord's Cricket Ground witnesses 14 men beat the twice over World Champions West Indies, putting India back onto the cricket world stage.
+                </p>
+            </div>
+            <div class="headerImage">
+                    <img src="assets/moviePosters/832.jpg" onclick="move(4)"  alt="">
+            </div>
+            <button onclick="slide4Next()"><i class="fa fa-caret-right"></i></button>
+        </div>
+    </div>
+
+    <div class="latest" id="latest">
+        <h1>Latest and Trending</h1>
+        <ul>
+            <li>
+                <div class="movieBox" style="background-image: url(assets/moviePosters/spiderMan.jpg);" id="spiderMan" onmouseenter="changeBg(1)" onmouseleave="changeBG(1)" >
+                    <div class="innerBox">
+                        <h6>Spider-Man NoWayHome</h6>
+                        <ul><li>Action</li><li>Adventure</li></ul>
+                        <a href="html/spiderman.html">Play <i class="fa fa-play"></i></a>
+                       
+                    </div>
+                </div>
+            </li>
+          <li>
+              <div class="movieBox" style="background-image: url(assets/moviePosters/pushpa.jpg);" id="pushpa" onmouseenter="changeBg(2)" onmouseleave="changeBG(2)">
+                <div class="innerBox">
+                    <h6>Pushpa</h6>
+                    <ul><li>Action</li><li>Drama</li></ul>
+                    <a href="html/pushpa.html">Play <i class="fa fa-play"></i></a>
+                </div>
+            </div>
+          </li>
+          <li>
+              <div class="movieBox" style="background-image: url(assets/moviePosters/bellbottom.jpg);" id="bellbottom" onmouseenter="changeBg(3)" onmouseleave="changeBG(3)">
+                <div class="innerBox">
+                    <h6>Bell Bottom</h6>
+                    <ul><li>Action</li><li>Thriller</li></ul>
+                    <a href="html/bellbottom.html">Play <i class="fa fa-play"></i></a>
+                </div>
+                </div>
+         </li>
+
+          <li>
+              <div class="movieBox" style="background-image: url(assets/moviePosters/sooryavanshi.jpg);" id="sooryavanshi" onmouseenter="changeBg(4)" onmouseleave="changeBG(4)">
+                <div class="innerBox">
+                    <h6>Sooryavanshi</h6>
+                    <ul><li>Action</li><li>Drama</li></ul>
+                    <a href="html/sooryavanshi.html">Play <i class="fa fa-play"></i></a>
+                </div>
+            </div>
+          </li>
+          <li>
+              <div class="movieBox" style="background-image: url(assets/moviePosters/83.jpg);" id="83" onmouseenter="changeBg(5)" onmouseleave="changeBG(5)">
+                <div class="innerBox">
+                    <h6>83</h6>
+                    <ul><li>Sports</li><li>Drama</li></ul>
+                    <a href="html/83.html">Play <i class="fa fa-play"></i></a>
+                </div>
+                </div>
+        </li>
+        <li>
+            <div class="movieBox" style="background-image: url(assets/moviePosters/attack.jpg);" id="attack" onmouseenter="changeBg(6)" onmouseleave="changeBG(6)">
+                <div class="innerBox">
+                    <h6>Attack</h6>
+                    <ul><li>Mystery</li><li>Action</li></ul>
+                    <a href="html/attack.html">Play <i class="fa fa-play"></i></a>
+                </div>
+            </div>
+        </li>
+        <li>
+            <div class="movieBox" style="background-image: url(assets/moviePosters/atarangi.jpg);" id="atarangi"
+            onmouseenter="changeBg(7)" onmouseleave="changeBG(7)">
+            <div class="innerBox">
+                <h6>Atrangi Re</h6>
+                <ul><li>Romance</li><li>Drama</li></ul>
+                <a href="html/atrangi.html">Play <i class="fa fa-play"></i></a>
+            </div>
+        </div>
+    </li>
+        </ul>
+    </div>
+    <div class="action" id="action">
+        <h1>Action</h1>
+        <ul>
+            <li>
+                <div class="movieBox" style="background-image: url(assets/moviePosters/eternals.jpg);" id="eternals" onmouseenter="changeBg(8)" onmouseleave="changeBG(8)" >
+                    <div class="innerBox">
+                        <h6>Eternals</h6>
+                        <ul><li>Action</li><li>Adventure</li></ul>
+                        <a href="html/eternals.html">Play <i class="fa fa-play"></i></a>
+                    </div>
+                </div>
+            </li>
+          <li>
+              <div class="movieBox" style="background-image: url(assets/moviePosters/venom.jpg);" id="venom" onmouseenter="changeBg(9)" onmouseleave="changeBG(9)">
+                <div class="innerBox">
+                    <h6>Venom: Let There Be Carnage</h6>
+                    <ul><li>Action</li><li>Adventure</li></ul>
+                    <a href="html/venom.html">Play <i class="fa fa-play"></i></a>
+                </div>
+            </div>
+          </li>
+          <li>
+              <div class="movieBox" style="background-image: url(assets/moviePosters/kgf.jpg);" id="kgf" onmouseenter="changeBg(10)" onmouseleave="changeBG(10)">
+                <div class="innerBox">
+                    <h6>K.G.F: Chapter 1</h6>
+                    <ul><li>Action</li><li>Romance</li></ul>
+                    <a href="html/kgf.html">Play <i class="fa fa-play"></i></a>
+                </div>
+                </div>
+         </li>
+
+          <li>
+              <div class="movieBox" style="background-image: url(assets/moviePosters/baaghi.jpg);" id="baaghi" onmouseenter="changeBg(11)" onmouseleave="changeBG(11)">
+                <div class="innerBox">
+                    <h6>Baaghi3</h6>
+                    <ul><li>Action</li><li>Thriller</li></ul>
+                    <a href="html/baaghi.html">Play <i class="fa fa-play"></i></a>
+                </div>
+            </div>
+          </li>
+          <li>
+              <div class="movieBox" style="background-image: url(assets/moviePosters/kong.jpg);" id="kong" onmouseenter="changeBg(12)" onmouseleave="changeBG(12)">
+                <div class="innerBox">
+                    <h6>Godzilla vs. Kong</h6>
+                    <ul><li>Sci-fi</li><li>Action</li></ul>
+                    <a href="html/kong.html">Play <i class="fa fa-play"></i></a>
+                </div>
+                </div>
+        </li>
+        <li>
+            <div class="movieBox" style="background-image: url(assets/moviePosters/wonderwomen.jpg);" id="wonderwomen" onmouseenter="changeBg(13)" onmouseleave="changeBG(13)">
+                <div class="innerBox">
+                    <h6>WonderWomen</h6>
+                    <ul><li>Action</li><li>Adventure</li></ul>
+                    <a href="html/wonderwomen.html">Play <i class="fa fa-play"></i></a>
+                </div>
+            </div>
+        </li>
+        <li>
+            <div class="movieBox" style="background-image: url(assets/moviePosters/aquaman.jpg);" id="aquaman"
+            onmouseenter="changeBg(14)" onmouseleave="changeBG(14)">
+            <div class="innerBox">
+                <h6>AquaMan</h6>
+                <ul><li>Action</li><li>Adventure</li></ul>
+                <a href="html/aquaman.html">Play <i class="fa fa-play"></i></a>
+            </div>
+        </div>
+    </li>
+        </ul>
+    </div>
+    <div class="marvel" id="marvel">
+        <h1>Marvel Cinematic Universe</h1>
+        <ul>
+            <li>
+                <div class="movieBox" style="background-image: url(assets/moviePosters//infinitywar.jpg);" id="infinitywar" onmouseenter="changeBg(15)" onmouseleave="changeBG(15)" >
+                    <div class="innerBox">
+                        <h6>Avengers: Infinity War</h6>
+                        <ul><li>Action</li><li>Adventure</li></ul>
+                        <a href="html/inifitywar.html">Play <i class="fa fa-play"></i></a>
+                    </div>
+                </div>
+            </li>
+          <li>
+              <div class="movieBox" style="background-image: url(assets/moviePosters/endgame.jpg);" id="endgame" onmouseenter="changeBg(16)" onmouseleave="changeBG(16)">
+                <div class="innerBox">
+                    <h6>Avengers: End Game</h6>
+                    <ul><li>Action</li><li>Sci-fi</li></ul>
+                    <a href="html/endgame.html">Play <i class="fa fa-play"></i></a>
+                </div>
+            </div>
+          </li>
+          <li>
+              <div class="movieBox" style="background-image: url(assets/moviePosters/cm.jpg);" id="cm" onmouseenter="changeBg(17)" onmouseleave="changeBG(17)">
+                <div class="innerBox">
+                    <h6>Captian Marvel</h6>
+                    <ul><li>Action</li><li>Sci-fi</li></ul>
+                    <a href="html/cm.html">Play <i class="fa fa-play"></i></a>
+                </div>
+                </div>
+         </li>
+
+          <li>
+              <div class="movieBox" style="background-image: url(assets/moviePosters/thor.jpg);" id="thor" onmouseenter="changeBg(18)" onmouseleave="changeBG(18)">
+                <div class="innerBox">
+                    <h6>Thor: Ragnarok</h6>
+                    <ul><li>Action</li><li>Adventure</li></ul>
+                    <a href="html/thor.html">Play <i class="fa fa-play"></i></a>
+                </div>
+            </div>
+          </li>
+          <li>
+              <div class="movieBox" style="background-image: url(assets/moviePosters/blackp.jpg);" id="blackp" onmouseenter="changeBg(19)" onmouseleave="changeBG(19)">
+                <div class="innerBox">
+                    <h6>Black Panther</h6>
+                    <ul><li>Adventure</li><li>Action</li></ul>
+                    <a href="html/blackp.html">Play <i class="fa fa-play"></i></a>
+                </div>
+                </div>      
+        </li>
+        <li>
+            <div class="movieBox" style="background-image: url(assets/moviePosters/captianAcw.jpg);" id="cacw" onmouseenter="changeBg(20)" onmouseleave="changeBG(20)">
+                <div class="innerBox">
+                    <h6>Captain America: Civil War</h6>
+                    <ul><li>Action</li><li>Adventure</li></ul>
+                    <a href="html/cacw.html">Play <i class="fa fa-play"></i></a>
+                </div>
+            </div>
+        </li>
+        <li>
+            <div class="movieBox" style="background-image: url(assets/moviePosters/AAOU.jpg);" id="aaou"
+            onmouseenter="changeBg(21)" onmouseleave="changeBG(21)">
+            <div class="innerBox">
+                <h6>Avengers: Age of Ultron</h6>
+                <ul><li>Action</li><li>Adventure</li></ul>
+                <a href="html/AAOU">Play <i class="fa fa-play"></i></a>
+            </div>
+        </div>
+    </li>
+        </ul>
+    </div>
+    <div class="footer">
+        <h2><b>Explore TV</b></h2>
+        <p> Explore Tv is an Indian brand of subscription video on-demand over-the-top streaming service. </p>
+        <ul>
+            <li><i class="fa fa-facebook-official" aria-hidden="true"></i></li>
+            <li><i class="fa fa-twitter" aria-hidden="true"></i></li>
+            <li><i class="fa fa-instagram" aria-hidden="true"></i></li>
+            <li><i class="fa fa-linkedin" aria-hidden="true"></i></li>
+        </ul>
+        <p class="info">Terms of use | Privacy Policy</p>
+        <p class="info">	&copy;2022 Explore TV</p>
+    </div>
+</body>
+
+</html>

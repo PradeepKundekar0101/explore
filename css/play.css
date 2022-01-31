@@ -1,0 +1,223 @@
+*
+{
+    margin: 0;
+    padding: 0;
+
+}
+body{
+    overflow-x: hidden;
+    font-family: Arial, Helvetica, sans-serif;
+    /* background-color: rgb(0, 137, 179); */
+    background-image: url("../assets/bg.png");
+    background-repeat: repeat-y;
+    background-size: cover;
+    color: #fff;
+}
+.nav
+{
+    display: flex;
+    align-items: center;
+    height: 60px;
+    width: 100vw;
+    background-color: rgb(32, 24, 68);  
+    position: fixed;
+    top: 0;
+    z-index: 10;
+    
+}
+.nav ul {
+    list-style: none;   
+    margin-left: 30px       ;     
+}
+.nav ul li{
+    display: inline-block;
+}
+.nav ul li a{
+    color: #fff;
+    border: 1px solid rgb(32, 24, 68);
+    text-decoration: none;
+    font-size: 16px;
+    margin-right: 30px;
+    padding: 8px 4px;
+}
+.nav ul li a:hover{
+    border: 1px solid #fff;
+    border-radius: 8px;
+    color: #000;
+    background-color: #fff;
+}
+.player{
+    margin-top: 60px;
+    display: flex;
+    justify-content: center;
+    background-image: url("../assets/bg2.jpg");
+    background-size: cover;
+    box-shadow: 0px 0px 10px #fff;
+}
+.player video{
+    border: 2px solid #fff;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    border-radius: 20px;
+    width: 80vw;
+}
+.movieDetails{
+    margin: 20px;
+}
+.movieDetails h1{
+    margin-bottom: 20px;
+    color: gold;
+}
+.movieDetails p{
+    letter-spacing: 2px;
+}
+.menuItems {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+}
+.menuItems .item{
+    display: flex;
+    justify-content: space-between;
+    background-color: #0005;
+    width: 90vw;
+    border-radius: 10px;
+    margin:20px 0;
+
+
+}
+.menuItems .item .left{
+    width: 200px;
+    
+}
+.menuItems .item .left img{
+    width: 200px;
+    height: 250px;
+    border-top-left-radius: 10px;
+    border-bottom-left-radius: 10px;
+}
+.menuItems .item .right{
+    display: flex;
+    flex-direction: column;
+    width: 80%;
+}
+.menuItems .item .right h1{
+    margin: 20px 0px;
+}
+.menuItems .item .right p{
+    letter-spacing: 2px;
+    margin-bottom: 10px;
+}
+.menuItems .item .right a{
+    width: 5%;
+    text-align: center;
+    border-radius: 5px;
+    padding: 3px 4px;
+    text-decoration: none;
+    font-size: 18px;
+    background-color: #fff;
+}
+@media  screen and (max-width:700px) {
+    
+    .menuItems .item .left img{
+        height: 200px;
+        width: 150px;
+    }
+    .menuItems .item .right p{
+        font-size: 12px;
+        letter-spacing: 0.5px;
+    }
+    .menuItems .item .right h1{
+        font-size: 22px;
+        margin: 15px 0px;
+    }
+    .menuItems .item .right a{
+        width: 20%;
+        text-decoration: none;
+        color: #292929;
+    }
+  
+}
+.footer{
+    position: relative;
+    top: 100%;
+    bottom: 0;
+    width: 100vw;
+    height: 200px;
+    background-color: rgb(0, 0, 0);
+    color: #fff;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   flex-direction: column;
+}
+.footer h2{
+    margin: 20px 0px 10px 0px;
+    background-image: linear-gradient(45deg,gold,rgb(0, 140, 255),rgb(140,0,255),gold);
+    -webkit-text-fill-color:transparent;
+    -webkit-background-clip: text;
+    background-size: 400%;
+    font-size: 30px;
+    animation:  text 5s linear infinite;
+}
+@keyframes  text {
+    0%{
+        background-position: 0;
+    }
+    50%{
+        background-position: 50%;
+    }
+    100%{
+        background-position: 100%;
+    }
+}
+
+.footer p{
+    letter-spacing: 2px;
+    text-align: center;
+}
+.footer ul{
+    display: inline-block;
+    list-style: none;
+    margin-top: 20px;
+}
+.footer ul li{
+    display: inline-block;
+    margin-right: 20px;
+}
+.footer ul li i{
+    font-size: 18px;
+    border-radius: 50%;
+    border: 1px solid #fff;
+    padding: 10px;
+    transition: 0.2s;
+}
+.footer ul li i:hover{
+    background-color: #fff;
+    color: #000;
+    cursor: pointer;
+    transform: scale(1.2);
+}
+.footer .info{
+    margin-top: 20px;
+    color: #292929;
+    letter-spacing: 1px;
+    font-size: 16px;
+    transition: 0.5s;
+}
+.footer .info:hover{
+    color: #fff;
+    cursor: pointer;
+}
+@media screen and (max-width:500px) {
+
+    .footer h2{
+        margin-top: 50px;
+        font-size: 22px;
+    }
+    .footer p{
+        font-size: 15px;
+    }
+}
